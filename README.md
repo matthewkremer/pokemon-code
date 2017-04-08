@@ -1,0 +1,27 @@
+# pokemon-code README
+
+You may have heard of the indie game Pokemon GO, but have you heard of Pokemon CODE? Catch Pokemon while coding in VS Code, it's the ultimate productivity killer.
+
+## Features
+
+Catch Pokemon. Use Command Pallate to run the following:
+
+`Pokemon - Start` = Starts Pokemon Code
+
+`Pokemon - Inventory` = Shows you your items
+
+`Pokemon - Pokedex` = Shows you the Pokemon you've caught
+
+## Requirements
+
+You should be at least the age of 11.
+
+## Known Issues
+
+
+
+## Release Notes
+
+### 0.0.3
+
+The Hack-n-Tell version release.
