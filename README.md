@@ -2,6 +2,8 @@
 
 You may have heard of the indie game Pokemon GO, but have you heard of Pokemon CODE? Catch Pokemon while coding in VS Code, it's the ultimate productivity killer.
 
+Install Pokemon-Code in VS Code by adding the `pokemon-code` extension.
+
 ## Features
 
 Catch Pokemon. Use Command Pallate to run the following:
