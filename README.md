@@ -18,10 +18,8 @@ You should be at least the age of 11.
 
 ## Known Issues
 
-
-
 ## Release Notes
 
-### 0.0.3
+### 0.0.4
 
 The Hack-n-Tell version release.

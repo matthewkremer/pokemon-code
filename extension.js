@@ -9,6 +9,7 @@ var items = savefile.items;
 var pokemon_boxes = savefile.pokemon_boxes;
 var shown_pokemon = null;
 var current_razzberry = false;
+var spawn_rarity = 500 // 1 chance out of spawn_rarity to spawn a Pokemon, 2 chances to spawn items. Each 1/spawn_rarity is a change in text-selection position.
 
 function save(){
     fs.writeFile(extensionPath+'/data/savefile.json', JSON.stringify({'items': items, 'pokemon_boxes': pokemon_boxes}));
@@ -136,7 +137,7 @@ function init_tallgrass(){
             return;
         }
 
-        var n = Math.floor(Math.random()*40);
+        var n = Math.floor(Math.random()*spawn_rarity);
         if (n==1 || n==2){
             shown_pokemon = Math.floor(Math.random()*151);
             vscode.window.showInformationMessage('A wild '+pokedex[''+shown_pokemon].name+' appeared!', {},...['Catch']).then(function(chosen){
