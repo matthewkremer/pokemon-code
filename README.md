@@ -25,3 +25,7 @@ You should be at least the age of 11.
 ### 0.0.4
 
 The Hack-n-Tell version release.
+
+### 0.0.5
+
+Fixed issue that some version may not save file successfully.
