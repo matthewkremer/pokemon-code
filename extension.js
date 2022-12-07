@@ -4,7 +4,7 @@ var vscode = require('vscode');
 var fs = require('fs');
 var savefile = require('./data/savefile.json');
 var pokedex = require('./data/pokedex.json');
-var extensionPath = vscode.extensions.getExtension('mattkremer.pokemon-code').extensionPath;
+var extensionPath = vscode.extensions.getExtension('chungmancheng.pokemon-code').extensionPath;
 var items = savefile.items;
 var pokemon_boxes = savefile.pokemon_boxes;
 var shown_pokemon = null;
@@ -12,7 +12,10 @@ var current_razzberry = false;
 var spawn_rarity = 500 // 1 chance out of spawn_rarity to spawn a Pokemon, 2 chances to spawn items. Each 1/spawn_rarity is a change in text-selection position.
 
 function save(){
-    fs.writeFile(`${extensionPath}/data/savefile.json`, JSON.stringify({'items': items, 'pokemon_boxes': pokemon_boxes}));
+    fs.writeFile(`${extensionPath}/data/savefile.json`, JSON.stringify({'items': items, 'pokemon_boxes': pokemon_boxes}), (err, result) => {
+        if (err)
+            console.log(err);
+    });
 }
 
 function show_pokemon(){

@@ -3,7 +3,7 @@
     "displayName": "pokemon-code",
     "description": "Catch Pokemon in augmented code-reality",
     "version": "0.0.5",
-    "publisher": "mattkremer",
+    "publisher": "chungmancheng",
     "engines": {
         "vscode": "^1.10.0"
     },
