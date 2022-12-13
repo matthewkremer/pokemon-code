@@ -29,3 +29,8 @@ The Hack-n-Tell version release.
 ### 0.0.5
 
 Fixed issue that some version may not save file successfully.
+
+### 0.0.6
+
+Fixed "extension start" issue caused by extensionPath error
+

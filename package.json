@@ -1,8 +1,8 @@
 {
-    "name": "pokemon-code",
-    "displayName": "pokemon-code",
-    "description": "Catch Pokemon in augmented code-reality",
-    "version": "0.0.5",
+    "name": "pokemon-code-2",
+    "displayName": "pokemon-code-2",
+    "description": "Catch Pokemon in visual code",
+    "version": "0.0.6",
     "publisher": "chungmancheng",
     "engines": {
         "vscode": "^1.10.0"
