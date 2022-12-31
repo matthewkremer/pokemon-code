@@ -217,6 +217,8 @@ function init_tallgrass(){
 function activate(context: vscode.ExtensionContext) {
 
     // load model
+    inventoryProvider = new NodeInventoryProvider();
+    pokedexProvider = new NodePokedexProvider();
     pokedexProvider.refresh();
     inventoryProvider.refresh();
 
@@ -224,12 +226,10 @@ function activate(context: vscode.ExtensionContext) {
     init_tallgrass();
     vscode.window.showInformationMessage('Your Pokemon journey has begun!', {});
 
-    inventoryProvider = new NodeInventoryProvider();
     context.subscriptions.push(
 		vscode.window.registerTreeDataProvider("package-inventory", inventoryProvider )
     );
 
-    pokedexProvider = new NodePokedexProvider();
     context.subscriptions.push(
 		vscode.window.registerTreeDataProvider("package-pokedex", pokedexProvider )
     );

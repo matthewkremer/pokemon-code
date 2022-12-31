@@ -15,7 +15,10 @@ Catch Pokemon. Use Command Pallate to run the following:
 `Pokemon - Pokedex` = Shows you the Pokemon you've caught
 
 ## Requirements
+<<<<<<< HEAD
 
+=======
+>>>>>>> dev
 - vscode version 1.73.0 or later
 
 ## Release Notes
@@ -38,5 +41,10 @@ Fixed "extension start" issue caused by extensionPath error.
 Fixed issue that some version may not save file successfully.
 
 ### 0.0.4
+<<<<<<< HEAD
+=======
+
+The Hack-n-Tell version release.
+>>>>>>> dev
 
 The Hack-n-Tell version release.
