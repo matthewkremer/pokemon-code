@@ -1,0 +1,1 @@
+{ "items": [{ "name": "Pokeball", "amount": 50 }, { "name": "Greatball", "amount": 13 }, { "name": "Ultraball", "amount": 6 }, { "name": "Razzberry", "amount": 4 }], "pokemon_boxes": [{ "id": 49, "name": "Venomoth", "exp": 158 }] }

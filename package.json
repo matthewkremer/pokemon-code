@@ -2,7 +2,7 @@
   "name": "pokemon-code-2",
   "displayName": "pokemon-code-2",
   "description": "Catch Pokemon in visual code",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "icon": "imgs/pokeball.png",
   "publisher": "chungmancheng",
   "engines": {
