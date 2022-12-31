@@ -1,0 +1,23 @@
+{
+    "items": [
+        {
+            "name": "Pokeball",
+            "amount": 50
+        },
+        {
+            "name": "Greatball",
+            "amount": 10
+        },
+        {
+            "name": "Ultraball",
+            "amount": 5
+        },
+        {
+            "name": "Razzberry",
+            "amount": 5
+        }
+    ],
+    "pokemon_boxes": [
+        
+    ]
+}
