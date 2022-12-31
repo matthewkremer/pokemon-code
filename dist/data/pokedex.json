@@ -753,10 +753,5 @@
         "id": 151,
         "name": "Mew",
         "exp": 270
-<<<<<<<< HEAD:src/data/pokedex.json
     } 
 ]
-========
-    }
-]
->>>>>>>> dev:dist/data/pokedex.json
