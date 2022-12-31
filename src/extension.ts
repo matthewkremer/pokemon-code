@@ -216,6 +216,10 @@ function init_tallgrass(){
 // your extension is activated the very first time the command is executed
 function activate(context: vscode.ExtensionContext) {
 
+    // load model
+    pokedexProvider.refresh();
+    inventoryProvider.refresh();
+
     // extension activates
     init_tallgrass();
     vscode.window.showInformationMessage('Your Pokemon journey has begun!', {});
