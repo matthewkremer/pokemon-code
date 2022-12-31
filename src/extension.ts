@@ -21,7 +21,7 @@ var pokedexProvider : NodePokedexProvider;
 
 function save(){
     
-    fs.writeFile(`${extensionPath}/src/data/savefile.json`, JSON.stringify({'items': items, 'pokemon_boxes': pokemon_boxes}), (err) => {
+    fs.writeFile(`${extensionPath}/dist/data/savefile.json`, JSON.stringify({'items': items, 'pokemon_boxes': pokemon_boxes}), (err) => {
         if (err)
             throw err;
 
