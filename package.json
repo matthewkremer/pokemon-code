@@ -1,41 +1,70 @@
 {
-    "name": "pokemon-code",
-    "displayName": "pokemon-code",
-    "description": "Catch Pokemon in augmented code-reality",
-    "version": "0.0.4",
-    "publisher": "mattkremer",
-    "engines": {
-        "vscode": "^1.10.0"
-    },
-    "categories": [
-        "Other"
+  "name": "pokemon-code-2",
+  "displayName": "pokemon-code-2",
+  "description": "Catch Pokemon in visual code",
+  "version": "2.0.2",
+  "icon": "imgs/pokeball.png",
+  "publisher": "chungmancheng",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.showPokemon",
+        "title": "Pokemon Code - Pokedex"
+      },
+      {
+        "command": "extension.showInventory",
+        "title": "Pokemon Code - Inventory"
+      }
     ],
-    "activationEvents": [
-        "onCommand:extension.startPokemonCode"
-    ],
-    "main": "./extension",
-    "contributes": {
-        "commands": [{
-            "command": "extension.startPokemonCode",
-            "title": "Pokemon Code - Start"
-        },{
-            "command": "extension.showPokemon",
-            "title": "Pokemon Code - Pokedex"
-        },{
-            "command": "extension.showInventory",
-            "title": "Pokemon Code - Inventory"
-        }]
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "package-explorer",
+          "title": "Pocket",
+          "icon": "imgs/pokeball.svg"
+        }
+      ]
     },
-    "scripts": {
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "typescript": "^2.0.3",
-        "vscode": "^1.0.0",
-        "mocha": "^2.3.3",
-        "eslint": "^3.6.0",
-        "@types/node": "^6.0.40",
-        "@types/mocha": "^2.2.32"
+    "views": {
+      "package-explorer": [
+        {
+          "id": "package-pokedex",
+          "name": "Pokedex"
+        },
+        {
+          "id": "package-inventory",
+          "name": "Inventory"
+        }
+      ]
     }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint \"src/**/*.ts\""
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.32",
+    "@types/node": "^16.11.7",
+		"@types/rimraf": "^2.0.2",
+		"@types/vscode": "^1.73.0",
+		"@typescript-eslint/eslint-plugin": "^5.42.0",
+		"@typescript-eslint/parser": "^5.42.0",
+		"eslint": "^8.26.0",
+		"typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
 }
